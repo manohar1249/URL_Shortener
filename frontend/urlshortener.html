@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1>URL Shortener</h1>
+        </div>
+        <div class="form">
+            <form onsubmit="shrink();return false;" class="my-4 form-inline">
+                <!-- <label for="shorturl">URL</label> -->
+                <input type="url" name="fullurl" id="fullurl" placeholder="URL" class="form-control col">
+                <input type="submit" class="btn btn-info" value="Shrink">
+            </form>
+        </div>
+        <div>
+            <table class="table table-responsive table-striped" id="urlTable">
+                <thead>
+                    <th>Full URL</th>
+                    <th>Short URL</th>
+                    <th>Clicks</th>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
